@@ -1,0 +1,18 @@
+# ignore all temporary MS Office files that exist while editing inside this git repo
+*~$*.xlsx
+*~$*.xls
+*~$*.docx
+*~$*.doc
+*~$*.pptx
+*~$*.ppt
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
