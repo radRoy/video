@@ -12,5 +12,4 @@ def main(file_path):
 
 if __name__ == "__main__":
     
-    video_path = 'blobs.png'
-    main(video_path)
+    main()

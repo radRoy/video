@@ -30,6 +30,7 @@ def play_video(filename, loop=False):
     cv2.destroyAllWindows()
 
 if __name__ == "__main__":
+    
     parser = argparse.ArgumentParser(description="Play a .mp4 video using OpenCV.")
     parser.add_argument("filename", help="Path to the .mp4 video file.")
     parser.add_argument("--loop", action="store_true", help="Loop the video playback.")

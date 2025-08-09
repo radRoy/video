@@ -32,6 +32,7 @@ def play_video_motion(filename, loop=False, fps=30):
             if i > 0:
                 #print(f"{type(ret), type(frame)}")
                 frame_diff = frame - frame_previous
+                #frame_diff = frame - frame_rgb_previous
 
                 cv2.imshow('Motion Playback (press Q to exit)', frame_diff)
 
@@ -40,8 +41,8 @@ def play_video_motion(filename, loop=False, fps=30):
                     cv2.destroyAllWindows()
                     return
             i += 1
-            #frame_previous = frame
-            frame_rgb_previous = frame_rgb
+            frame_previous = frame
+            #frame_rgb_previous = frame_rgb
 
         if not loop:
             break
